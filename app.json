@@ -1,14 +1,14 @@
 {
-    "name": "Mukesh Robot",
+    "name": "Daisy Robot",
     "description": "Telegram Group Management Bot.",
-    "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
+    "logo": "https://telegra.ph/file/0ee59d1b4cdf6a80ea1f9.jpg",
     "keywords": [
        "telegram",
        "modular",
        "group",
        "manager"
     ],   
- "repository": "https://github.com/Noob-Mukesh/MukeshRobot",
+ "repository": "https://github.com/biharigwaar/BLAZE",
  "stack": "heroku-22",
  "addons": [
     {
@@ -22,12 +22,12 @@
     "API_ID": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": ""
+       "value": "16844777"
     },
     "API_HASH": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": ""
+       "value": "fdcf5556bf37d26d960f8bc4c263d492"
     },
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -45,7 +45,7 @@
     "EVENT_LOGS": {
        "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
        "required": true,
-       "value": ""
+       "value": "-1002050675293"
     },
     "MONGO_DB_URI": {
        "description": "Required for database connections.",
@@ -65,22 +65,22 @@
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": ""
+       "value": "7000670346"
     },
     "START_IMG": {
        "description": "Telegraph link of the image which will be shown at start command.",
        "required": true,
-       "value": ""
+       "value": "https://telegra.ph/file/0ee59d1b4cdf6a80ea1f9.jpg"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
        "required": true,
-       "value": ""
+       "value": "https://t.me/sahil_kzx"
     },
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
        "required": true,
-       "value": ""
+       "value": "6771447740:AAEiDDH-U_dQFwxsFcpUlEAnxkbrCqa-X-8"
     }
  }
 }
