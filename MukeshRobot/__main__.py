@@ -554,7 +554,7 @@ Wᴀʀɴ Mᴀɴᴀɢᴇᴍᴇɴᴛ
         query.message.edit_caption(f"""━━━━━━━━━━━━━━━━━━━━
 ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇꜰꜰᴇᴄᴛɪᴠᴇ ɴᴏᴡ :
 🎉 ᴄᴏɴɢʀᴀɢᴜʟᴀᴛɪᴏɴꜱ 🎉
-[DAISY]("https://t.me/Daisyxmusibot") ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ
+[BLAZEX]("https://t.me/BLAZER0_BOT") ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ
 ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
 ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ :
