@@ -55,12 +55,12 @@
     "CASH_API_KEY": {
         "description": " Get your API key from https://www.alphavantage.co/support/#api-key",
         "required": false,
-        "value": ""
+        "value": "PCILWYE8X3DEEV7M"
     },
     "TIME_API_KEY": {
         "description": " Get your API key from https://timezonedb.com/api",
         "required": false,
-        "value": ""
+        "value": "MSATXGNOJ0GQ"
     },         
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
