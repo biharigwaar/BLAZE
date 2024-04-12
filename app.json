@@ -75,7 +75,7 @@
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
        "required": true,
-       "value": "https://t.me/sahil_kzx"
+       "value": "https://t.me/DAISYXSUPPOURT"
     },
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
