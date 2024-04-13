@@ -424,7 +424,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
      ],
                     [
                         InlineKeyboardButton(
-                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"{SUPPORT_CHAT}"
+                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
                             text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"https://t.me/Daisyupdates"
@@ -618,7 +618,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 
 
 {BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/biharigwaar/DAISY/blob/main/LICENSE).
-© 2024 - 2025 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ]({SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
+© 2024 - 2025 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/DAISYXSUPPOURT), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
 """,
             parse_mode=ParseMode.MARKDOWN,
             
