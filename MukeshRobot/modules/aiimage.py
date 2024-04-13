@@ -1,6 +1,6 @@
 """MIT License
 
-Copyright (c) 2023-24 Noob-Mukesh
+Copyright (c) 2024-25 biharigwaar
 
           GITHUB: NOOB-MUKESH
           TELEGRAM: @MR_SUKKUN
@@ -54,7 +54,7 @@ import requests
 #     await b.send_media_group(message.chat.id, media=photos)
     
 # -----------CREDITS -----------
-# telegram : @legend_coder
+# telegram : @xd_d3vil
 # github : noob-mukesh
 # __mod_name__ = "Aɪ ɪᴍᴀɢᴇ"
 # __help__ = """
