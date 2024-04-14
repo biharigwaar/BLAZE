@@ -1,7 +1,7 @@
 import random, html
 
 from MukeshRobot import dispatcher
-from Tianabot.modules.disable import (
+from MukeshRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
