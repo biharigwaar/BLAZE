@@ -100,10 +100,7 @@ async def cancel_spam(event):
 
 __mod_name__ = "Tᴀɢᴀʟʟ"
 __help__ = """
-──「 Help of Tagalert ‼️ 」── 
+──「  ᴏɴʟʏ ғᴏʀ ᴀᴅᴍɪɴs 」──
 
-❍ /tagalert <on/off> 'to Enable Notifications For Tags Where Patricia Is
-
-Example:
-If you are mentioned in a group Daisy will tell you who mentioned you, message that you are tagged in and which group is that'
+❍ /tagall ᴏʀ @all '(ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ᴏʀ ᴀᴅᴅ ᴀɴᴏᴛʜᴇʀ ᴍᴇssᴀɢᴇ) ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴡɪᴛʜᴏᴜᴛ ᴇxᴄᴇᴘᴛɪᴏɴ.'
 """
