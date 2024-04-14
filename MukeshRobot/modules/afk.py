@@ -16,7 +16,6 @@ from MukeshRobot.modules.users import get_user_id
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
-
 def afk(update: Update, context: CallbackContext):
     args = update.effective_message.text.split(None, 1)
     user = update.effective_user
@@ -39,7 +38,9 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("{} is now away!{}".format(fname, notice))
+        update.effective_message.reply_text(
+            "{} ɪs ɴᴏᴡ ᴀᴡᴀʏ  {}".format(fname, notice)
+        )
     except BadRequest:
         pass
 
@@ -58,14 +59,14 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} is here!",
-                "{} is back!",
-                "{} is now in the chat!",
-                "{} is awake!",
-                "{} is back online!",
-                "{} is finally here!",
-                "Welcome back! {}",
-                "Where is {}?\nIn the chat!",
+                "{} ɪs ʜᴇʀᴇ!",
+                "{} ɪs ʙᴀᴄᴋ!",
+                "{} ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ!",
+                "{} ɪs ᴀᴡᴀᴋᴇ!",
+                "{} ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ!",
+                "{} ɪs ғɪɴᴀʟʟʏ ʜᴇʀᴇ!",
+                "Wᴇʟᴄᴏᴍᴇ ʙᴀᴄᴋ! {}",
+                "Wʜᴇʀᴇ ɪs {}?\nɪɴ ᴛʜᴇ ᴄʜᴀᴛ?",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
@@ -123,48 +124,56 @@ def reply_afk(update: Update, context: CallbackContext):
 
 
 def check_afk(update, context, user_id, fst_name, userc_id):
-    if sql.is_afk(user_id):
+
+if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
-            res = "{} is afk".format(fst_name)
+            res = "{} ɪs ᴀғᴋ".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is afk.\nReason: <code>{}</code>".format(
+            res = "{} ɪs ᴀғᴋ .\nʀᴇᴀsᴏɴ: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
 
 
-__help__ = """
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ᴀғᴋ ᴍᴏᴅᴜʟᴇ:
+help = """
+ 
+*ᴀᴡᴀʏ ғʀᴏᴍ ɢʀᴏᴜᴘ*
+ ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ᴀғᴋ ᴍᴏᴅᴜʟᴇ:
 ◌ /afk : ᴛʜɪs ᴡɪʟʟ sᴇᴛ ʏᴏᴜ ᴏғғʟɪɴᴇ.
 ◌ /afk [ʀᴇᴀsᴏɴ] : ᴛʜɪs ᴡɪʟʟ sᴇᴛ ʏᴏᴜ ᴏғғʟɪɴᴇ ᴡɪᴛʜ ᴀ ʀᴇᴀsᴏɴ.
 ◌ /afk [ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ/ᴘʜᴏᴛᴏ] : ᴛʜɪs ᴡɪʟʟ sᴇᴛ ʏᴏᴜ ᴏғғʟɪɴᴇ ᴡɪᴛʜ ᴀɴ ɪᴍᴀɢᴇ ᴏʀ sᴛɪᴄᴋᴇʀ.
-◌ /afk [ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ/ᴘʜᴏᴛᴏ] [ʀᴇᴀsᴏɴ] : ᴛʜɪs ᴡɪʟʟ sᴇᴛ ʏᴏᴜ ᴀғᴋ ᴡɪᴛʜ ᴀɴ ɪᴍᴀɢᴇ ᴀɴᴅ ʀᴇᴀsᴏɴ ʙᴏᴛʜ."""
+◌ /afk [ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ/ᴘʜᴏᴛᴏ] [ʀᴇᴀsᴏɴ] : ᴛʜɪs ᴡɪʟʟ sᴇᴛ ʏᴏᴜ ᴀғᴋ ᴡɪᴛʜ ᴀɴ ɪᴍᴀɢᴇ ᴀɴᴅ ʀᴇᴀsᴏɴ ʙᴏᴛʜ.
+◌ /brb <ʀᴇᴀsᴏɴ>*:* sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ 
+ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
+"""
 
-AFK_HANDLER = DisableAbleCommandHandler("afk", afk, run_async=True)
+AFK_HANDLER = DisableAbleCommandHandler("afk", afk,run_async=True)
+
 AFK_REGEX_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"^(?i)brb(.*)$"), afk, friendly="afk", run_async=True
+    Filters.regex(r"(?s)^bye(\s .*)?$"),
+    afk,
+    friendly="afk",
+    run_async=True,
 )
-NO_AFK_HANDLER = MessageHandler(
-    Filters.all & Filters.chat_type.groups, no_longer_afk, run_async=True
-)
-AFK_REPLY_HANDLER = MessageHandler(
-    Filters.all & Filters.chat_type.groups, reply_afk, run_async=True
-)
+
+
+NO_AFK_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, no_longer_afk)
+AFK_REPLY_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, reply_afk)
 
 dispatcher.add_handler(AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "Aꜰᴋ"
-__command_list__ = ["afk"]
-__handlers__ = [
+mod_name = "Aꜰᴋ"
+command_list = ["afk"]
+handlers = [
     (AFK_HANDLER, AFK_GROUP),
     (AFK_REGEX_HANDLER, AFK_GROUP),
     (NO_AFK_HANDLER, AFK_GROUP),
-    (AFK_REPLY_HANDLER, AFK_REPLY_GROUP),
+    (AFK_REPLY_HANDLER, AFK_REPLY_GROUP), 
 ]
