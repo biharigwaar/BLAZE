@@ -18,7 +18,7 @@ from MukeshRobot.modules.helper_funcs.chat_status import (
     user_admin,
 can_promote
 )
-#from MukeshRobot.utils.admins import can_promote
+from MukeshRobot.utils.admins import can_promote
 from MukeshRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
