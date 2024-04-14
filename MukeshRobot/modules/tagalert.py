@@ -261,3 +261,11 @@ async def mentioned_alert(client, message):
         message.continue_propagation()
     except:
         return message.continue_propagation()
+
+
+__mod_name__ = "TAGALERT"
+__help__ = """
+──「 FOR ALL USER 」──
+
+❍ /tagalert '(on tag alert ) IF ANY ONE MSG ON GROUP BOT AUTOMATICALLY TAG YOU INBOX 📥.'
+"""
