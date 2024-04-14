@@ -8,7 +8,7 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
 
-from MukeshRobot import client 
+from MukeshRobot import pbot
 from MukeshRobot import BOT_ID, MONGO_DB_URI
 
 
@@ -26,7 +26,7 @@ def get_info(id):
     return nightmod.find_one({"id": id})
 
 
-@client.on_message(filters.command(["tagalert"]) & filters.private)
+@pbot.on_message(filters.command(["tagalert"]) & filters.private)
 async def locks_dfunc(_, message):
    lol = await message.reply("Processing..")
    if len(message.command) != 2:
@@ -68,7 +68,7 @@ async def locks_dfunc(_, message):
 
 
      
-@client.on_message(filters.incoming & ~filters.edited)
+@pbot.on_message(filters.incoming & ~filters.edited)
 async def mentioned_alert(client, message):
     try:
         if not message:
