@@ -8,7 +8,7 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
 
-from MukeshRobot import program as client 
+from MukeshRobot import pyrogram as client 
 from MukeshRobot import BOT_ID, MONGO_DB_URI
 
 
