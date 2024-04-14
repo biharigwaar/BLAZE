@@ -265,7 +265,10 @@ async def mentioned_alert(client, message):
 
 __mod_name__ = "ᴛᴀɢᴀʟᴇʀᴛ"
 __help__ = """
-──「 FOR ALL USER 」──
+──「 Help of Tagalert ‼️ 」── 
 
-❍ /tagalert '(on tag alert ) IF ANY ONE MSG ON GROUP BOT AUTOMATICALLY TAG YOU INBOX 📥.'
+❍ /tagalert <on/off> 'to Enable Notifications For Tags Where Patricia Is
+
+Example:
+If you are mentioned in a group Daisy will tell you who mentioned you, message that you are tagged in and which group is that'
 """
