@@ -4,6 +4,7 @@ import sys
 import time
 import telegram.ext as tg
 from aiohttp import ClientSession
+from aiohttp import client
 from pyrogram import Client
 from telethon import TelegramClient
 
