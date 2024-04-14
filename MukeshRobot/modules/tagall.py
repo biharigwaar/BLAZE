@@ -102,10 +102,8 @@ __mod_name__ = "Tᴀɢᴀʟʟ"
 __help__ = """
 ──「 Help of Tagalert ‼️ 」── 
 
-Too many mentions.. Cant you manage them all alone..
-
-Commands (only work on bot inbox)
-/tagalert <on/off> - to Enable Notifications For Tags Where Patricia Is
+❍ /tagalert <on/off> 'to Enable Notifications For Tags Where Patricia Is
 
 Example:
-If you are mentioned in a group Daisy will tell you who mentioned you, message that you are tagged in and which group is that
+If you are mentioned in a group Daisy will tell you who mentioned you, message that you are tagged in and which group is that'
+"""
