@@ -100,7 +100,12 @@ async def cancel_spam(event):
 
 __mod_name__ = "Tᴀɢᴀʟʟ"
 __help__ = """
-──「  ᴏɴʟʏ ғᴏʀ ᴀᴅᴍɪɴs 」──
+──「 Help of Tagalert ‼️ 」── 
 
-❍ /tagall ᴏʀ @all '(ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ᴏʀ ᴀᴅᴅ ᴀɴᴏᴛʜᴇʀ ᴍᴇssᴀɢᴇ) ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴡɪᴛʜᴏᴜᴛ ᴇxᴄᴇᴘᴛɪᴏɴ.'
-"""
+Too many mentions.. Cant you manage them all alone..
+
+Commands (only work on bot inbox)
+/tagalert <on/off> - to Enable Notifications For Tags Where Patricia Is
+
+Example:
+If you are mentioned in a group Merissa will tell you who mentioned you, message that you are tagged in and which group is that
