@@ -169,7 +169,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-mod_name = "Aꜰᴋ"
+mod_name = "Aꜰᴋ🎹"
 command_list = ["afk"]
 handlers = [
     (AFK_HANDLER, AFK_GROUP),
